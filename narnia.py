@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 # website entry point
 app = Flask(__name__)
@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/narnia")
 def narnia():
-    return "<h1>Welcome to Narnia!<h1>"
+    return render_template("index.html")
 
 
 if __name__ == "__main__":
