@@ -8,4 +8,3 @@ app.register_blueprint(tabs, url_prefix="/owl")
 
 if __name__ == "__main__":
     app.run(debug=True)
-
