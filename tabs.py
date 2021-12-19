@@ -4,7 +4,7 @@ tabs = Blueprint(__name__, "tabs")
 
 
 @tabs.route("/")
-def narnia():
+def owl():
     return render_template("index.html")
 
 
