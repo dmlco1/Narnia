@@ -10,4 +10,5 @@ def owl():
 
 @tabs.route("/covid")
 def covid():
-    return render_template("graph.html")
+    f = open("database.txt", "r")
+    return render_template("covid.html", content=f.readline())
