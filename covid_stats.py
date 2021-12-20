@@ -27,6 +27,7 @@ total_stats = driver.find_element(By.XPATH, "//*[@id='yDmH0d']/c-wiz/div/div[2]/
 new_cases = driver.find_element(By.XPATH,
                                 "//*[@id='yDmH0d']/c-wiz/div/div[2]/div[2]/div[4]/div/div/div[1]/div[1]/div[1]"
                                 "/div/div[1]/div[3]/strong").text
+
 per_milion_cases = driver.find_element(By.XPATH, "//*[@id='yDmH0d']/c-wiz/div/div[2]/div[2]/div[4]/div/div/div"
                                                  "[2]/div/div[2]/table/tbody/tr[2]/td[4]").text
 
@@ -34,14 +35,20 @@ total_deaths = driver.find_element(By.XPATH,
                                    "//*[@id='yDmH0d']/c-wiz/div/div[2]/div[2]/div[4]/div/div/div[1]/div[1]/"
                                    "div[1]/div/div[3]/div[2]").text
 new_deaths = driver.find_element(By.XPATH,
-                                 "//*[@id='yDmH0d']/c-wiz/div/div[2]/div[2]/div[4]/div/div/div[1]/div[1]/"
-                                 "div[1]/div/div[3]/div[3]/strong").text
+                                 "//*[@id='yDmH0d']/c-wiz/div/div[2]/div[2]/div[4]/div/div/div[1]/div[1]/div[1]/div/div[3]/div[3]/strong").text
 
 total_doses = driver.find_element(By.XPATH,
                                   "//*[@id='yDmH0d']/c-wiz/div/div[2]/div[2]/div[4]/div/div/div[1]/div[1]/"
                                   "div[3]/div/div[1]/div[2]").text
 
-total = [total_stats, new_cases, per_milion_cases, total_deaths, total_doses]
+full_vaccination = driver.find_element(By.XPATH,
+                                  "//*[@id='yDmH0d']/c-wiz/div/div[2]/div[2]/div[4]/div/div/div[1]/div[1]/div[3]/div/div[3]/div[2]").text
+
+location = driver.find_element(By.XPATH,
+                                  "//*[@id='yDmH0d']/c-wiz/div/div[2]/div[2]/div[4]/div/div/div[1]/h3").text
+
+
+total = [total_stats, new_cases, per_milion_cases, total_deaths, new_deaths, total_doses, full_vaccination, location]
 
 f = open("database.txt", "w")
 for n in range(len(total)):

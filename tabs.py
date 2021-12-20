@@ -10,5 +10,13 @@ def owl():
 
 @tabs.route("/covid")
 def covid():
-    f = open("database.txt", "r")
-    return render_template("covid.html", content=f.readline())
+    file = open("database.txt", "r")
+    content = file.readlines()
+    return render_template("covid.html", total_cases=content[0],
+                           new_cases=content[1],
+                           per_million_cases=content[2],
+                           total_deaths=content[3],
+                           new_deaths=content[4],
+                           total_doses=content[5],
+                           full_vaccination=content[6],
+                           location=content[7])

@@ -37,7 +37,37 @@
         </div>
     </div>
 </nav>
-<p>{{content}}</p>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title text-center fw-bold">{{location}}</h5>
+  </div>
+</div>
+
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Total Cases</h5>
+      <p class="card-text">{{total_cases}}</p>
+      <p class="card-text"><small class="text-muted">today's new cases: {{new_cases}}</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Total Deaths</h5>
+      <p class="card-text">{{total_deaths}}</p>
+      <p class="card-text"><small class="text-muted">today's deaths: {{new_deaths}}</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Vaccination</h5>
+      <p class="card-text">{{total_doses}} administrated doses</p>
+      <p class="card-text"><small class="text-muted">{{full_vaccination}} fully vaccinated</small></p>
+    </div>
+  </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
