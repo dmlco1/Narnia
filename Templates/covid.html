@@ -9,7 +9,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <a href="#" class="navbar-left"><img src="/owl/images/Owl.jpg" alt="" width="90" height="50" class="d-inline-block align-text-top"></a>
+    <a href="#" class="navbar-left"></a>
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -40,7 +40,8 @@
 
 <div class="card">
   <div class="card-body">
-    <h5 class="card-title text-center fw-bold">{{location}}</h5>
+      <img src="https://www.gstatic.com/onebox/sports/logos/flags/{{location_image}}_icon_square.png" placeholder width="40" height="40" class="rounded mx-auto d-block" alt="...">
+    <h3 class="card-title text-center fw-bold">{{location}}</h3>
   </div>
 </div>
 
@@ -64,6 +65,133 @@
       <h5 class="card-title">Vaccination</h5>
       <p class="card-text">{{total_doses}} administrated doses</p>
       <p class="card-text"><small class="text-muted">{{full_vaccination}} fully vaccinated</small></p>
+    </div>
+  </div>
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/SARS-CoV-2_
+without_background.png/1020px-SARS-CoV-2_without_background.png" placeholder width="315" height="315" class="rounded mx-auto d-block" alt="...">
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        COVID-19
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+          COVID-19 affects each person in a different way. Most infected people develops the disease with light symptoms.
+          However, this virus should be taken serious and must not be devalued.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Common symptoms
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">Fever</li>
+              <li class="list-group-item">Cough</li>
+              <li class="list-group-item">Tiredness</li>
+              <li class="list-group-item">Loss of taste or smell</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Vaccines
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">Pfizer</li>
+              <li class="list-group-item">Johnson & Johnson</li>
+              <li class="list-group-item">Moderna</li>
+              <li class="list-group-item">AstraZeneca</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+      <h3 class="card-title text-center fw-bold">Vaccines</h3>
+  </div>
+</div>
+
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Pfizer</h5>
+      <p class="card-text">Efficiency: 95%</p>
+      <ul class="list-unstyled">
+          <li>This RNA vaccine can cause some secondary effects like:</li>
+          <ul>
+              <li>Headache</li>
+              <li>Joint Pain</li>
+              <li>Tiredness</li>
+              <li>Chills</li>
+              <li>Muscle Aches</li>
+          </ul>
+      </ul>
+        <p class="card-text"><small class="text-muted">Manufacturer: BioNTech, Fosun Pharma, Pfizer</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Johnson & Johnson</h5>
+      <p class="card-text">Efficiency: 66,9%</p>
+      <ul class="list-unstyled">
+          <li>Vaccine type: Viral vector not capable of replication. Secondary effects:</li>
+          <ul>
+              <li>Pain or tenderness at the injection site</li>
+              <li>Redness</li>
+              <li>Swelling</li>
+              <li>Fever</li>
+          </ul>
+      </ul>
+        <p class="card-text"><small class="text-muted">Manufacturer: Janssen Pharmaceuticals</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Moderna</h5>
+      <p class="card-text">Efficiency: 94,1%</p>
+        <ul class="list-unstyled">
+            <li>This RNA vaccine can cause some secondary effects like:</li>
+            <ul>
+                <li>Pain, swelling or redness at the injection site</li>
+                <li>Tiredness</li>
+                <li>Headache</li>
+                <li>joint or muscle pain</li>
+            </ul>
+        </ul>
+        <p class="card-text"><small class="text-muted">Manufacturer: Moderna, NIAID</small></p>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">AstraZeneca</h5>
+      <p class="card-text">Efficiency: 63%</p>
+      <ul class="list-unstyled">
+            <li>Vaccine type: Viral vector not capable of replication. Secondary effects:</li>
+            <ul>
+                <li>Pain or tenderness at the injection site</li>
+                <li>Headache</li>
+                <li>Tiredness</li>
+                <li>Fever</li>
+            </ul>
+        </ul>
+        <p class="card-text"><small class="text-muted">Manufacturer: AstraZeneca, Universidade de Oxford</small></p>
     </div>
   </div>
 </div>
